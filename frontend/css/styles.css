@@ -9,12 +9,34 @@ body {
     background-color: #f4f4f9;
   }
   
+  .git-container{
+    position: relative;
+    display: flex;
+    margin-top: -5em;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2em;
+  }
+
+  .mini-nav a img{
+    width: 3em;
+    height: 3em;
+  }
+
+  .mini-nav a img:hover{
+    background-color: #007BFF;
+    transition: 2s ease;
+    border-radius: 1em;
+  }
+
   .container, .form-container {
     text-align: center;
     background: #fff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
   }
   
   h1, h2 {
@@ -57,6 +79,25 @@ body {
     width: 100%;
   }
   
+  .git{
+    position: fixed;
+    bottom: 0;
+    padding: 2em;
+    width: 80%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .git p{
+    display: flex;
+    align-items: center;
+  }
+
+  .git img:hover{
+    width: 2em;
+  }
   /* Basic styling for the task container */
 .taskContainer{
   display: flex;
@@ -95,4 +136,26 @@ button {
 
 button:hover {
   background-color: #0056b3;
+}
+
+
+@media (max-width:768px){
+
+  .git{
+    position: fixed;
+    display: flex;
+    flex-direction: column-reverse;
+    bottom: 0;
+    padding: 2em;
+    width: 80%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .git p img{
+    display: none;
+  }
+
 }
