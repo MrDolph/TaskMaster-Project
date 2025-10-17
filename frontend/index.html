@@ -3,30 +3,45 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TaskMaster — Simplify Your Productivity</title>
   <link rel="shortcut icon" href="img/fancy_f.jpg" type="image/x-icon">
-  <title>TaskMaster</title>
   <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="landing">
 
-  <div class="git-container"> 
-    <div class="container">
-      <h1>Welcome to TaskMaster</h1>
-      <button onclick="window.location.href='signin.html'">Sign In</button>
-      <button onclick="window.location.href='signup.html'">Sign Up</button>
+  <header class="navbar">
+    <div class="logo">
+      <img src="img/home.svg" alt="TaskMaster logo" />
+      <h1>TaskMaster</h1>
     </div>
+    <nav>
+      <a href="signin.html" class="nav-link">Sign In</a>
+      <a href="signup.html" class="nav-link signup">Sign Up</a>
+    </nav>
+  </header>
 
-    <div class="git">
-      <a href="https://github.com/MrDolph/TaskMaster-Project/" target="_blank">
-        <button>My GitHub Pag</button>
+  <main class="hero">
+    <div class="hero-content">
+      <h2>Stay Organized. Stay Ahead.</h2>
+      <p>Manage your tasks efficiently, set smart deadlines, and boost your productivity with TaskMaster.</p>
+      <div class="hero-buttons">
+        <button onclick="window.location.href='signin.html'" class="btn primary">Sign In</button>
+        <button onclick="window.location.href='signup.html'" class="btn secondary">Sign Up</button>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="github-section">
+      <a href="https://github.com/MrDolph/TaskMaster-Project/" target="_blank" class="github-link">
+        <img src="img/arrow_left.svg" alt="GitHub arrow">
+        <span>View Source Code on GitHub</span>
       </a>
-      <p><img src="img/arrow_left.svg" alt="arrow_left-icon"> A link to my Github page so that you can view the source codes to this Capstone project</p>
-    </div> 
-  </div>
-  
+    </div>
+    <p>&copy; 2025 TaskMaster. All Rights Reserved.</p>
+  </footer>
 
   <script src="js/script.js"></script>
-  <!-- <script src="js/taskmaster.js"></script> -->
-  <script src="js/tasks.js"></script>
 </body>
 </html>
